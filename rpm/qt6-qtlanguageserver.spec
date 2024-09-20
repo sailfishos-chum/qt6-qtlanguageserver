@@ -1,7 +1,5 @@
-%global qt_module qtlanguageserver
-
 Summary: Qt6 - LanguageServer component
-Name:    qt6-%{qt_module}
+Name:    qt6-qtlanguageserver
 Version: 6.7.2
 Release: 0%{?dist}
 
