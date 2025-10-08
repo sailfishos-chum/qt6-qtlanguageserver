@@ -28,7 +28,6 @@ Requires: qt6-qtbase-devel%{?_isa}
 %description devel
 %{summary}.
 
-
 %prep
 %autosetup -n %{name}-%{version}/upstream -p1
 
@@ -43,17 +42,16 @@ Requires: qt6-qtbase-devel%{?_isa}
 
 
 %files
-%license LICENSES/*
-%{_qt6_libdir}/libQt6JsonRpc.so.6*
-%{_qt6_libdir}/libQt6LanguageServer.so.6*
+#%%license LICENSES/*
+#%%{_qt6_archdatadir}/sbom/%%{qt_module}-%%{qt_version}.spdx
 
 %files devel
 %{_qt6_headerdir}/QtJsonRpc/
 %{_qt6_headerdir}/QtLanguageServer/
+%{_qt6_libdir}/libQt6JsonRpc.a
 %{_qt6_libdir}/libQt6JsonRpc.prl
-%{_qt6_libdir}/libQt6JsonRpc.so
+%{_qt6_libdir}/libQt6LanguageServer.a
 %{_qt6_libdir}/libQt6LanguageServer.prl
-%{_qt6_libdir}/libQt6LanguageServer.so
 %{_qt6_libdir}/cmake/Qt6BuildInternals/StandaloneTests/QtLanguageServer*
 %{_qt6_libdir}/cmake/Qt6JsonRpcPrivate/
 %{_qt6_libdir}/cmake/Qt6LanguageServerPrivate/
