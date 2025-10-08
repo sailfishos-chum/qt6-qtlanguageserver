@@ -2,7 +2,7 @@
 
 Summary: Qt6 - LanguageServer component
 Name:    qt6-qtlanguageserver
-Version: 6.7.2
+Version: 6.8.3
 Release: 0%{?dist}
 
 License: GPL-3.0-only WITH Qt-GPL-exception-1.0
